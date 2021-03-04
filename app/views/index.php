@@ -24,14 +24,14 @@
                             </div>
                             <!-- Article Content -->
                             <div class="big-post-text">
-                                <h1>Chevrolet car-saving technology delivers</h1>
-                                <p>Stive Clark,Aug 4, 2015</p>
-                                <p>In a move to address mounting concerns about security on Android, Google nad Samsung are now issuing</p>
+                                <h1><?= $data['posts'][0]->title ?></h1>
+                                <p><?= $data['posts'][0]->name_author . ", " . date('M d, Y', strtotime($data['posts'][0]->created_at)) ?></p>
+                                <p><?= (strlen($data['posts'][0]->content) > 100) ? substr($data['posts'][0]->content, 0, 100) . '...' : $data['posts'][0]->content ?></p>
                             </div>
                             <!-- Article Share Button & Comment Button -->
                             <div class="big-post-extras">
-                                <p><i class="fas fa-share-alt"></i> <span>424</span> Shares</p>
-                                <p><i class="fas fa-comments"></i> <span>424</span> Shares</p>
+                                <p><i class="fas fa-share-alt"></i> <span><?= $data['posts'][0]->shares ?></span> Shares</p>
+                                <p><i class="fas fa-comments"></i> <span><?= $data['posts'][0]->comments ?></span> Comments</p>
                             </div>
                         </div>
                     </div>
@@ -52,14 +52,14 @@
                                         </div>
                                         <!-- Article Content -->
                                         <div class="medium-post-text">
-                                            <h1>Alcatel's $180 Idol 3 4.7 is a</h1>
-                                            <p>Stive Clark,Aug 4, 2015</p>
-                                            <p>In a move to address mounting concerns about security on Android, Google nad Samsung are now issuing</p>
+                                            <h1><?= $data['posts'][1]->title ?></h1>
+                                            <p><?= $data['posts'][1]->name_author . ", " . date('M d, Y', strtotime($data['posts'][1]->created_at)) ?></p>
+                                            <p><?= (strlen($data['posts'][1]->content) > 100) ? substr($data['posts'][1]->content, 0, 100) . '...' : $data['posts'][1]->content ?></p>
                                         </div>
                                         <!-- Article Share Button & Comment Button -->
                                         <div class="medium-post-extras">
-                                            <p><i class="fas fa-share-alt"></i> <span>424</span> Shares</p>
-                                            <p><i class="fas fa-comments"></i> <span>424</span> Shares</p>
+                                            <p><i class="fas fa-share-alt"></i> <span><?= $data['posts'][1]->shares ?></span> Shares</p>
+                                            <p><i class="fas fa-comments"></i> <span><?= $data['posts'][1]->comments ?></span> Shares</p>
                                         </div>
                                     </div>
                                 </div>
@@ -75,14 +75,14 @@
                                         </div>
                                         <!-- Article Content -->
                                         <div class="medium-post-text">
-                                            <h1>Gadget user good news</h1>
-                                            <p>Stive Clark,Aug 4, 2015</p>
-                                            <p>In a move to address mounting concerns about security on Android, Google nad Samsung are now issuing</p>
+                                            <h1><?= $data['posts'][2]->title ?></h1>
+                                            <p><?= $data['posts'][2]->name_author . ", " . date('M d, Y', strtotime($data['posts'][2]->created_at)) ?></p>
+                                            <p><?= (strlen($data['posts'][2]->content) > 100) ? substr($data['posts'][2]->content, 0, 100) . '...' : $data['posts'][2]->content ?></p>
                                         </div>
                                         <!-- Article Share Button & Comment Button -->
                                         <div class="medium-post-extras">
-                                            <p><i class="fas fa-share-alt"></i> <span>424</span> Shares</p>
-                                            <p><i class="fas fa-comments"></i> <span>424</span> Shares</p>
+                                            <p><i class="fas fa-share-alt"></i> <span><?= $data['posts'][2]->shares ?></span> Shares</p>
+                                            <p><i class="fas fa-comments"></i> <span><?= $data['posts'][2]->comments ?></span> Shares</p>
                                         </div>
                                     </div>
                                 </div>
@@ -97,10 +97,33 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
-
+                    <div>
+                        <h1>Mobile</h1>
+                        <div class=".bar"></div>
+                    </div>
                 </div>
                 <div class="col-sm-4">
+                    <div class="categories">
+                        <h1>Popular News</h1>
+                        <div class=".bar"></div>
+                    </div>
 
+                    <div class="post">
+                        <div class="post-image">
+                            <img src="">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-content-text">
+                                <h1>Canon launches photo centric 00214 Model supper shutter camera</h1>
+                                <p><span>10Aug-2015</span>, by: <span>Eric Joan</span></p>
+                            </div>
+                            <!-- Article Share Button & Comment Button -->
+                            <div class="post-content-extras">
+                                <p><i class="fas fa-share-alt"></i> <span>424</span> Shares</p>
+                                <p><i class="fas fa-comments"></i> <span>424</span> Shares</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

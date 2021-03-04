@@ -3,7 +3,7 @@ require APP_ROOT . '/views/inc/head.php';
 ?>
 <div class="navbar dark">
     <?php
-    require APP_ROOT . '/views/inc/nav.php';
+    require APP_ROOT . '/views/inc/header.php';
     ?>
 </div>
 

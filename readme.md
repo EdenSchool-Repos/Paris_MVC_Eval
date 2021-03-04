@@ -15,7 +15,7 @@ Ton objectif est de réaliser une version numérique du média plus attractive q
 Le site d'*EDEN News* est exclusivement en français, il est également adapté pour les **supports mobiles**.
 
 ###  Charte graphique
-Les couleurs du site seront principalement le **noir**, le **blanc** et le **gris**. Les titres et liens auront pour police ***Roboto*** quant au texte il utilise la police ***Alegreya Sans***.
+Les couleurs du site seront principalement le **noir**, le **blanc** et le **gris** pour les liens. Les titres et liens auront pour police ***Roboto*** quant au texte il utilise la police ***Alegreya Sans***.
 Le journal impose l'utilisation de la librairie ***Fontawesome*** pour les icônes du site, ainsi que *"Bootstrap 3.4"* pour la mise en page. Pour les carousels aucunes autres bibliothèques qu’***OwlCarousel*** ne sera accepté.
 
 <ins>Couleurs:</ins>

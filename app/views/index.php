@@ -9,7 +9,7 @@
     require APP_ROOT . '/views/inc/nav.php';
     ?>
 
-    <main>
+    <main class="index">
         <!-- First Posts  -->
         <div class="container">
             <div class="row first-posts">

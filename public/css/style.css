@@ -181,24 +181,24 @@ nav .more-menu .col .title {
 	index.php
  */
 
-main .first-posts {
+main.index .first-posts {
 	height: 60vh;
 	margin-top: 2em;
 }
 
-main .first-posts .big-post {
+main.index .first-posts .big-post {
 	height: 100%;
 	background-position: center;
 	background-size: cover;
 }
 
-main .first-posts .big-post .big-post-content {
+main.index .first-posts .big-post .big-post-content {
 	position: absolute;
 	bottom: 0;
 	margin: 0 10%;
 }
 
-main .first-posts .big-post .big-post-content .big-post-recommendation {
+main.index .first-posts .big-post .big-post-content .big-post-recommendation {
 	background-color: #F72300;
 	display: inline-block;
 	color: #fff;
@@ -206,103 +206,237 @@ main .first-posts .big-post .big-post-content .big-post-recommendation {
 	margin-left: 1em;
 }
 
-main .first-posts .big-post .big-post-content .big-post-text {
+main.index .first-posts .big-post .big-post-content .big-post-text {
 	background-color: #fff;
 	padding: 1em 2em;
 }
 
-main .first-posts .big-post .big-post-content .big-post-extras {
+main.index .first-posts .big-post .big-post-content .big-post-extras {
 	display: flex;
 	background-color: #fff;
 	padding: 0 1em;
 }
 
-main .first-posts .big-post .big-post-content .big-post-extras p {
+main.index .first-posts .big-post .big-post-content .big-post-extras p {
 	color: #A5A5A5;
 	margin-left: 1em;
 }
 
-main .first-posts .big-post .big-post-content .big-post-extras p i {
+main.index .first-posts .big-post .big-post-content .big-post-extras p i {
 	padding: 5px;
 	background-color: #A5A5A5;
 	color: #fff
 }
 
-main .first-posts .big-post .big-post-content .big-post-extras p span {
+main.index .first-posts .big-post .big-post-content .big-post-extras p span {
 	font-weight: bold;
 	color: #000;
 }
 
-main .first-posts .medium-post {
+main.index .first-posts .medium-post {
 	height: 48.8%;
 	background-position: center;
 	background-size: cover;
 }
 
-main .first-posts .medium-post:nth-child(1) {
+main.index .first-posts .medium-post:nth-child(1) {
 	margin-bottom: 1em;
 }
 
-main .first-posts .medium-post .medium-post-content {
+main.index .first-posts .medium-post .medium-post-content {
 	position: absolute;
 	bottom: 0;
 	margin: 0 10%;
 }
 
-main .first-posts .medium-post .medium-post-content .medium-post-recommendation {
+main.index .first-posts .medium-post .medium-post-content .medium-post-recommendation {
 	display: inline-block;
 	color: #fff;
 	padding: 5px 10px;
 	margin-left: 1em;
 }
 
-main .first-posts .medium-post .medium-post-content .medium-post-recommendation-1 {
+main.index .first-posts .medium-post .medium-post-content .medium-post-recommendation-1 {
 	background-color: #5F35AC;
 }
 
-main .first-posts .medium-post .medium-post-content .medium-post-recommendation-2 {
+main.index .first-posts .medium-post .medium-post-content .medium-post-recommendation-2 {
 	background-color: #2196F3;
 }
 
-main .first-posts .medium-post .medium-post-content .medium-post-text {
+main.index .first-posts .medium-post .medium-post-content .medium-post-text {
 	background-color: #fff;
 	padding: 1em;
 }
 
-main .first-posts .medium-post .medium-post-content .medium-post-extras {
+main.index .first-posts .medium-post .medium-post-content .medium-post-extras {
 	display: flex;
 	background-color: #fff;
 	padding: 0 1em;
 }
 
-main .first-posts .medium-post .medium-post-content .medium-post-extras p {
+main.index .first-posts .medium-post .medium-post-content .medium-post-extras p {
 	color: #A5A5A5;
 	margin-left: 1em;
 }
 
-main .first-posts .medium-post .medium-post-content .medium-post-extras p i {
+main.index .first-posts .medium-post .medium-post-content .medium-post-extras p i {
 	padding: 5px;
 	background-color: #A5A5A5;
 	color: #fff
 }
 
-main .first-posts .medium-post .medium-post-content .medium-post-extras p span {
+main.index .first-posts .medium-post .medium-post-content .medium-post-extras p span {
 	font-weight: bold;
 	color: #000;
 }
 
 @media (max-width: 1611px) {
-	main .first-posts .medium-post .medium-post-content .medium-post-text h1 {
+	main.index .first-posts .medium-post .medium-post-content .medium-post-text h1 {
 		font-size: 18px;
 	}
 
-	main .first-posts .medium-post .medium-post-content .medium-post-text p {
+	main.index .first-posts .medium-post .medium-post-content .medium-post-text p {
 		display: none;
 	}
 }
 
 @media (max-width: 767px) {
-	main .first-posts .medium-post {
+	main.index .first-posts .medium-post {
 		margin: 10% -1em;
 	}
+}
+
+/*
+	users/register.php
+ */
+main.users-register .login-reg-panel{
+	transform: translateY(0%);
+	text-align:center;
+	width:70%;
+	right:0;left:0;
+	margin: 10em auto;
+	height:400px;
+	background-color: #FF8400;
+}
+main.users-register .white-panel{
+	background-color: #fff;
+	position:absolute;
+	top:-50px;
+	width:50%;
+	right:calc(50% - 50px);
+	transition:.3s ease-in-out;
+	z-index:0;
+	box-shadow: 0 0 15px 9px #00000096;
+}
+main.users-register .login-reg-panel input[type="radio"]{
+	position:relative;
+	display:none;
+}
+main.users-register .login-reg-panel{
+	color:#3A3A3A;
+}
+main.users-register .login-reg-panel #label-login,
+main.users-register .login-reg-panel #label-register{
+	border:1px solid #9E9E9E;
+	padding:5px 5px;
+	width:150px;
+	display:block;
+	text-align:center;
+	border-radius:10px;
+	cursor:pointer;
+	font-weight: 600;
+	font-size: 18px;
+}
+main.users-register .login-info-box{
+	width:30%;
+	padding:0 50px;
+	top:20%;
+	left:0;
+	position:absolute;
+	text-align:left;
+}
+main.users-register .register-info-box{
+	width:30%;
+	padding:0 50px;
+	top:20%;
+	right:0;
+	position:absolute;
+	text-align:left;
+
+}
+main.users-register .right-log{right:50px !important;}
+
+main.users-register .login-show,
+main.users-register .register-show{
+	z-index: 1;
+	display:none;
+	opacity:0;
+	transition:0.3s ease-in-out;
+	color:#242424;
+	text-align:left;
+	padding:50px;
+}
+main.users-register .show-log-panel{
+	display:block;
+	opacity:0.9;
+}
+main.users-register .login-show input{
+	width: 100%;
+	display: block;
+	margin:20px 0;
+	padding: 15px;
+	border: 1px solid #b5b5b5;
+	outline: none;
+}
+main.users-register .login-show input[type="button"] {
+	max-width: 150px;
+	width: 100%;
+	background: #444444;
+	color: #f9f9f9;
+	border: none;
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	float:right;
+	cursor:pointer;
+}
+main.users-register .login-show a{
+	display:inline-block;
+	padding:10px 0;
+}
+
+main.users-register .register-show input{
+	width: 100%;
+	display: block;
+	margin:20px 0;
+	padding: 15px;
+	border: 1px solid #b5b5b5;
+	outline: none;
+}
+main.users-register .register-show input[type="button"] {
+	max-width: 150px;
+	width: 100%;
+	background: #444444;
+	color: #f9f9f9;
+	border: none;
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	float:right;
+	cursor:pointer;
+}
+main.users-register .credit {
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	color: #3B3B25;
+	margin: 0;
+	padding: 0;
+	font-family: Arial,sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	z-index: 99;
 }

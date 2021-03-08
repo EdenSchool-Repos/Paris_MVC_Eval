@@ -26,10 +26,16 @@ class User
 
     public function register($data)
     {
-        $this->db->query('INSERT INTO tbl_users (username, email, password) VALUES (:username, :email, :password)');
-        $this->db->bind(':username', $data['username']);
+        $this->db->query('INSERT INTO tbl_users (firstname, lastname, email, password, avatar, bio, hobbies, newspaper_name, active) VALUES (:firstname, :lastname, :email, :password, :avatar, :bio, :hobbies, :newspaper_name, :active)');
+        $this->db->bind(':firstname', $data['firstname']);
+        $this->db->bind(':lastname', $data['lastname']);
         $this->db->bind(':email', $data['email']);
         $this->db->bind(':password', $data['password']);
+        $this->db->bind(':avatar', $data['avatar']);
+        $this->db->bind(':bio', $data['bio']);
+        $this->db->bind(':hobbies', $data['hobbies']);
+        $this->db->bind(':newspaper_name', $data['newspaperName']);
+        $this->db->bind(':active', 1);
 
         if($this->db->execute()){
             return true;
